@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio - Salkhaev Sanzhar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo">MyPortfolio</div>
+    <nav class="menu">
+        <a href="index.html">Басты бет</a>
+        <a href="blog.html">Блог</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Salkhaev Sanzhar</h1>
+                <p class="role">Web әзірлеуші</p>
+
+                <p class="desc">
+                    Сәлем! Мен HTML және CSS тілдерін үйреніп жүрмін.
+                    Бұл сайтта менің жұмыстарым мен дағдыларым көрсетілген.
+                    Сайт Flexbox технологиясымен жасалды.
+                </p>
+
+                <div class="actions">
+                    <a class="btn primary" href="blog.html">Блогымды оқу</a>
+                    <a class="btn outline" href="#contacts">Байланыс</a>
+                </div>
+            </div>
+
+            <div class="hero-img">
+                <img src="myphoto.jpeg" alt="avatar">
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Менің дағдыларым</h2>
+        <div class="skill-list">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">Flexbox</div>
+            <div class="skill">Git/GitHub</div>
+            <div class="skill">VS Code</div>
+            <div class="skill">UI Design</div>
+        </div>
+    </section>
+
+    <section class="march-plan card-style">
+        <h2>Наурыз айындағы күнтізбе</h2>
+        <table class="layout-table">
+            <tr>
+                <td class="cell calendar-cell">
+                    <table class="calendar">
+                        <tr>
+                            <th>Дс</th>
+                            <th>Сс</th>
+                            <th>Ср</th>
+                            <th>Бс</th>
+                            <th>Жм</th>
+                            <th>Сб</th>
+                            <th>Жс</th>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><button class="weekend-btn" onclick="showHoliday('1')">1</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td><button class="special-btn" onclick="showHoliday('8')">8</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><button class="special-btn" onclick="showHoliday('9')">9</button></td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td><button class="weekend-btn" onclick="showHoliday('15')">15</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td><button class="special-btn" onclick="showHoliday('21')">21</button></td>
+                            <td><button class="special-btn" onclick="showHoliday('22')">22</button></td>
+                        </tr>
+
+                        <tr>
+                            <td><button class="special-btn" onclick="showHoliday('23')">23</button></td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td><button class="weekend-btn" onclick="showHoliday('29')">29</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>30</td>
+                            <td>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td class="cell info-cell">
+                    <p>Күнді басып ақпаратты қараңыз.</p>
+                    <div id="holidayInfo" class="info-box">
+                        <h3>Ақпарат</h3>
+                        <p>Жексенбі немесе мереке күнін таңдаңыз.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="js-tasks card-style">
+        <h2>Интерактивті тапсырмалар (JS)</h2>
+
+        <div class="js-grid">
+            <div class="js-box">
+                <h3>Атыңызды енгізіңіз</h3>
+                <input type="text" id="nameInput" placeholder="Атыңыз">
+                <button onclick="sayHello()">Көрсету</button>
+            </div>
+
+            <div class="js-box">
+                <h3>Күн және түс</h3>
+                <input type="date" id="dateVal"><br><br>
+                <input type="color" id="colorVal"><br><br>
+                <button onclick="changeColorAndDate()">Көрсету</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <h2>Байланыс</h2>
+        <p>Email: sanzharajdarly@gmail.com</p>
+        <p>Telegram: @sanzhar909</p>
+        <p>Phone: +7 708 187 3935</p>
+        <p>Instagram: salkhaev_s</p>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>© 2026. Salkhaev Sanzhar</p>
+</footer>
+
+<script>
+function sayHello() {
+    let name = document.getElementById("nameInput").value.trim();
+    if (name === "") {
+        alert("Атыңызды енгізіңіз");
+        return;
+    }
+    alert("Сәлем, " + name + "!");
+}
+
+function changeColorAndDate() {
+    let date = document.getElementById("dateVal").value;
+    let color = document.getElementById("colorVal").value;
+
+    if (!date) {
+        alert("Алдымен күнді таңдаңыз");
+        return;
+    }
+
+    alert("Күн: " + date + "\nТүс: " + color);
+    document.body.style.backgroundColor = color;
+}
+
+function showHoliday(day) {
+    const holidayInfo = document.getElementById("holidayInfo");
+
+    const holidays = {
+        "1": {
+            title: "1-наурыз",
+            text: "Жексенбі. Демалыс күні."
+        },
+        "8": {
+            title: "8-наурыз",
+            text: "Халықаралық әйелдер күні. Бұл күн жексенбіге түскен."
+        },
+        "9": {
+            title: "9-наурыз",
+            text: "8-наурыз жексенбіге түскендіктен бұл күн демалыс болып есептеледі."
+        },
+        "15": {
+            title: "15-наурыз",
+            text: "Жексенбі. Демалыс күні."
+        },
+        "21": {
+            title: "21-наурыз",
+            text: "Наурыз мейрамы."
+        },
+        "22": {
+            title: "22-наурыз",
+            text: "Наурыз мейрамы және жексенбі."
+        },
+        "23": {
+            title: "23-наурыз",
+            text: "Наурыз мейрамына байланысты қосымша демалыс күні."
+        },
+        "29": {
+            title: "29-наурыз",
+            text: "Жексенбі. Демалыс күні."
+        }
+    };
+
+    holidayInfo.innerHTML = `
+        <h3>${holidays[day].title}</h3>
+        <p>${holidays[day].text}</p>
+    `;
+}
+</script>
+
+</body>
+</html>
